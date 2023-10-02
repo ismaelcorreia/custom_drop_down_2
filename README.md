@@ -41,9 +41,7 @@ import 'package:custom_dropdown_2/custom_dropdown2.dart';
 
 <hr>
 
-![Example App](https://github.com/AbdullahChauhan/custom-dropdown/blob/master/readme_assets/preview.gif)
-
-![Example App](https://github.com/AbdullahChauhan/custom-dropdown/blob/master/readme_assets/preview.gif)
+![Example App](https://raw.githubusercontent.com/AbdullahChauhan/custom-dropdown/master/readme_assets/preview.gif)
 
 <hr>
 

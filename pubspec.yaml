@@ -4,7 +4,7 @@ homepage: https://github.com/ismaelcorreia/custom_drop_down_2
 repository: https://github.com/ismaelcorreia/custom_drop_down_2
 
 
-version: 1.0.1
+version: 1.0.2
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
@@ -19,6 +19,5 @@ dev_dependencies:
     sdk: flutter
     
 flutter:
-
   uses-material-design: true
 
