@@ -51,6 +51,8 @@ class CustomDropDownII extends StatefulWidget {
   // ignore: library_private_types_in_public_api
   final _ListItemBuilder? listItemBuilder;
 
+  final Color? indicatorBackgroundColor;
+
   CustomDropDownII({
     Key? key,
     required this.items,
@@ -69,6 +71,7 @@ class CustomDropDownII extends StatefulWidget {
     this.onChanged,
     this.excludeSelected = true,
     this.fillColor = Colors.white,
+    this.indicatorBackgroundColor,
   })  : assert(items!.isNotEmpty, 'Items list must contain at least one item.'),
         assert(
           controller.text.isEmpty || items!.contains(controller.text),
@@ -106,6 +109,7 @@ class CustomDropDownII extends StatefulWidget {
     this.excludeSelected = true,
     this.canCloseOutsideBounds = true,
     this.hideSelectedFieldWhenOpen = false,
+    this.indicatorBackgroundColor,
     this.fillColor = Colors.white,
   })  : assert(items!.isNotEmpty, 'Items list must contain at least one item.'),
         assert(
@@ -145,6 +149,7 @@ class CustomDropDownII extends StatefulWidget {
     this.canCloseOutsideBounds = true,
     this.hideSelectedFieldWhenOpen = false,
     this.fillColor = Colors.white,
+    this.indicatorBackgroundColor,
   })  : assert(
           (listItemBuilder == null && listItemStyle == null) ||
               (listItemBuilder == null && listItemStyle != null) ||

@@ -26,6 +26,7 @@ class _DropdownOverlay extends StatefulWidget {
   final Future<List<String>> Function(String)? futureRequest;
   final Duration? futureRequestDelay;
   final Color? backgroundColor;
+  final Color? indicatorBackgroundColor;
 
   final _ListItemBuilder? listItemBuilder;
 
@@ -47,6 +48,7 @@ class _DropdownOverlay extends StatefulWidget {
     this.futureRequestDelay,
     this.listItemBuilder,
     this.backgroundColor,
+    this.indicatorBackgroundColor,
   }) : super(key: key);
 
   @override
@@ -157,6 +159,7 @@ class _DropdownOverlayState extends State<_DropdownOverlay> {
               }
               setState(() => displayOverly = false);
             },
+            indicatorBackgroundColor: widget.indicatorBackgroundColor,
           )
         : (mayFoundSearchRequestResult != null &&
                     !mayFoundSearchRequestResult!) ||
