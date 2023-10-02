@@ -1,10 +1,10 @@
-library animated_custom_dropdown;
+library custom_dropdown_2;
 
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-export 'custom_dropdown.dart';
+export 'custom_dropdown2.dart';
 
 part 'animated_section.dart';
 
@@ -22,7 +22,7 @@ enum _SearchType { onListData, onRequestData }
 
 typedef _ListItemBuilder = Widget Function(BuildContext context, String result);
 
-class CustomDropdown extends StatefulWidget {
+class CustomDropDownII extends StatefulWidget {
   final List<String>? items;
   final TextEditingController controller;
   final String? hintText;
@@ -51,7 +51,7 @@ class CustomDropdown extends StatefulWidget {
   // ignore: library_private_types_in_public_api
   final _ListItemBuilder? listItemBuilder;
 
-  CustomDropdown({
+  CustomDropDownII({
     Key? key,
     required this.items,
     required this.controller,
@@ -87,7 +87,7 @@ class CustomDropdown extends StatefulWidget {
         hideSelectedFieldWhenOpen = false,
         super(key: key);
 
-  CustomDropdown.search({
+  CustomDropDownII.search({
     Key? key,
     required this.items,
     required this.controller,
@@ -123,7 +123,7 @@ class CustomDropdown extends StatefulWidget {
         futureRequestDelay = null,
         super(key: key);
 
-  const CustomDropdown.searchRequest({
+  const CustomDropDownII.searchRequest({
     Key? key,
     required this.controller,
     required this.futureRequest,
@@ -155,10 +155,10 @@ class CustomDropdown extends StatefulWidget {
         super(key: key);
 
   @override
-  State<CustomDropdown> createState() => _CustomDropdownState();
+  State<CustomDropDownII> createState() => _CustomDropDownIIState();
 }
 
-class _CustomDropdownState extends State<CustomDropdown> {
+class _CustomDropDownIIState extends State<CustomDropDownII> {
   final layerLink = LayerLink();
 
   @override
